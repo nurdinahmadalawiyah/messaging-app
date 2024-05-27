@@ -17,7 +17,7 @@ public class WebSocketEventListener {
 
     private final SimpMessageSendingOperations messageTemplate;
     @EventListener
-    public void HandleWebSockerDisconnectListener(
+    public void HandleWebSocketDisconnectListener(
             SessionDisconnectEvent event
     ) {
         StompHeaderAccessor headerAccessor = StompHeaderAccessor.wrap(event.getMessage());
