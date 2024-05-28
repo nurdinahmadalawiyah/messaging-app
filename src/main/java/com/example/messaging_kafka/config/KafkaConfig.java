@@ -1,6 +1,7 @@
 package com.example.messaging_kafka.config;
 
 import com.example.messaging_kafka.chat.ChatMessage;
+import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
@@ -15,6 +16,11 @@ import java.util.Map;
 @EnableKafka
 @Configuration
 public class KafkaConfig {
+
+    @Bean
+    public NewTopic topic() {
+        return new NewTopic("chat_messages", 1, (short) 1);
+    }
 
     @Bean
     public ProducerFactory<String, ChatMessage> producerFactory() {
