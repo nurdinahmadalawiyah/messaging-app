@@ -16,8 +16,8 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.58;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #ccc;
+    background-color: #000000;
     height: 100%;
 }
 
@@ -35,7 +35,9 @@ body {
     width: 100%;
     min-height: 38px;
     font-size: 15px;
-    border: 1px solid #c8c8c8;
+    border: 1px solid #444;
+    background-color: #18181C;
+    color: #83838A;
 }
 
 .form-group {
@@ -45,11 +47,16 @@ body {
 input {
     padding-left: 10px;
     outline: none;
+    border-radius: 12px;
+    background-color: #27272A;
+    color: #494950;
+    border: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 h1 {
@@ -57,28 +64,27 @@ h1 {
 }
 
 a {
-    color: #006FEE;
+    color: #1e88e5;
 }
 
 button {
     box-shadow: none;
     border: 1px solid transparent;
-    border-radius: 25px;
     font-size: 14px;
     outline: none;
     line-height: 100%;
     white-space: nowrap;
     vertical-align: middle;
     padding: 0.6rem 1rem;
-    border-radius: 2px;
+    border-radius: 12px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     min-height: 38px;
 }
 
 button.default {
-    background-color: #e8e8e8;
-    color: #333;
+    background-color: #444;
+    color: #ccc;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -99,9 +105,9 @@ button.accent {
 }
 
 .username-page-container {
-    background: #fff;
+    background: #18181C;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
-    border-radius: 2px;
+    border-radius: 20px;
     width: 100%;
     max-width: 500px;
     display: inline-block;
@@ -116,6 +122,7 @@ button.accent {
     right: 0;
     margin: 0 auto;
     margin-top: -160px;
+    color: #ccc;
 }
 
 .username-page-container .username-submit {
@@ -132,22 +139,24 @@ button.accent {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color: #18181C;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 30px;
     margin-top: 30px;
     height: calc(100% - 60px);
-    max-height: 600px;
     position: relative;
+    color: #ccc;
 }
 
 #chat-page ul {
     list-style-type: none;
-    background-color: #FFF;
+    background-color: #18181C;
     margin: 0;
     overflow: auto;
     overflow-y: scroll;
     padding: 0 20px 0px 20px;
     height: calc(100% - 150px);
+    color: #ccc;
 }
 
 #chat-page #messageForm {
@@ -158,11 +167,12 @@ button.accent {
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #444;
 }
 
 #chat-page ul li p {
     margin: 0;
+    color: #ccc;
 }
 
 #chat-page .event-message {
@@ -197,20 +207,24 @@ button.accent {
     border-radius: 50%;
     font-style: normal;
     text-transform: uppercase;
+    background-color: #1e88e5;
 }
 
 #chat-page .chat-message span {
-    color: #333;
+    color: #ccc;
     font-weight: 600;
 }
 
 #chat-page .chat-message p {
-    color: #43464b;
+    color: #ccc;
 }
 
 #messageForm .input-group input {
     float: left;
     width: calc(100% - 85px);
+    background-color: #27272A;
+    color: #ccc;
+    border: 1px solid #444;
 }
 
 #messageForm .input-group button {
@@ -218,12 +232,15 @@ button.accent {
     width: 80px;
     height: 38px;
     margin-left: 5px;
+    background-color: #27272A;
+    color: #fff;
 }
 
 .chat-header {
     text-align: center;
     padding: 15px;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid #444;
+    color: #ccc;
 }
 
 .chat-header h2 {
