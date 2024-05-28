@@ -81,16 +81,22 @@ function onMessageReceived(payload) {
     } else {
         messageElement.classList.add('chat-message');
 
+        if (message.sender === username) {
+            messageElement.classList.add('own-message');
+        }
+
         var avatarElement = document.createElement('i');
         var avatarText = document.createTextNode(message.sender[0]);
         avatarElement.appendChild(avatarText);
-        avatarElement.style['background-color'] = getAvatarColor(message.sender);
+        var avatarColor = getAvatarColor(message.sender);
+        avatarElement.style['background-color'] = avatarColor;
 
         messageElement.appendChild(avatarElement);
 
         var usernameElement = document.createElement('span');
         var usernameText = document.createTextNode(message.sender);
         usernameElement.appendChild(usernameText);
+        usernameElement.style.color = avatarColor; // Set the username text color to match the avatar color
         messageElement.appendChild(usernameElement);
     }
 

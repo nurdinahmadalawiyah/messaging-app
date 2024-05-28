@@ -219,6 +219,21 @@ button.accent {
     color: #ccc;
 }
 
+#chat-page .chat-message.own-message {
+    padding-left: 20px;
+    padding-right: 68px;
+    text-align: right;
+}
+
+#chat-page .chat-message.own-message i {
+    left: auto;
+    right: 10px;
+}
+
+#chat-page .chat-message.own-message span {
+    display: block;
+}
+
 #messageForm .input-group input {
     float: left;
     width: calc(100% - 85px);
@@ -257,9 +272,7 @@ button.accent {
     width: 100%;
 }
 
-
 @media screen and (max-width: 730px) {
-
     .chat-container {
         margin-left: 10px;
         margin-right: 10px;
